@@ -1,0 +1,97 @@
+// Do not edit styles.css - it is automatically generated from sass compiler
+
+// Reset
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// Text Colors
+$dark-blue: #1d1e35;
+$soft-red: #f47c57;
+
+// Divider Colors
+$light-gray-blue: #e7e7e9;
+
+body {
+  position: relative;
+  padding: 58px 24px 0px 24px;
+  min-height: 100vh;
+  font-family: 'Kumbh Sans', sans-serif;
+  background: rgb(101, 101, 231);
+  background: linear-gradient(
+    0deg,
+    rgba(101, 101, 231, 1) 0%,
+    rgba(175, 103, 233, 1) 100%
+  );
+}
+
+// Card
+.card {
+  padding: 132px 24px 48px;
+  background: #ffffff;
+  border-radius: 23px;
+
+  .title {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 38px;
+  }
+}
+
+// Accordions
+.accordion {
+  padding: 20px 0;
+  border-bottom: 1px solid $light-gray-blue;
+
+  .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .accordion-title {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .accordion-title:hover {
+    cursor: pointer;
+    color: $soft-red;
+  }
+  .accordion-content {
+    font-size: 12px;
+    font-weight: 400;
+    display: none;
+  }
+  .accordion-icon {
+    height: 4px;
+    width: 8px;
+  }
+}
+
+// Footer
+footer {
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: $light-gray-blue;
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+    color: $soft-red;
+  }
+  p {
+    line-height: 1.5;
+  }
+}
+
+// Desktop View
+@media all and (min-width: 1440px) {
+}

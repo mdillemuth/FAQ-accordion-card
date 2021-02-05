@@ -1,0 +1,91 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  padding: 58px 24px 0px 24px;
+  min-height: 100vh;
+  font-family: 'Kumbh Sans', sans-serif;
+  background: #6565e7;
+  background: -webkit-gradient(linear, left bottom, left top, from(#6565e7), to(#af67e9));
+  background: linear-gradient(0deg, #6565e7 0%, #af67e9 100%);
+}
+
+.card {
+  padding: 132px 24px 48px;
+  background: #ffffff;
+  border-radius: 23px;
+}
+
+.card .title {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.accordion {
+  padding: 20px 0;
+  border-bottom: 1px solid #e7e7e9;
+}
+
+.accordion .accordion-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.accordion .accordion-title {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.accordion .accordion-title:hover {
+  cursor: pointer;
+  color: #f47c57;
+}
+
+.accordion .accordion-content {
+  font-size: 12px;
+  font-weight: 400;
+  display: none;
+}
+
+.accordion .accordion-icon {
+  height: 4px;
+  width: 8px;
+}
+
+footer {
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #e7e7e9;
+}
+
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #f47c57;
+}
+
+footer p {
+  line-height: 1.5;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -7,7 +7,7 @@
 
 body {
   position: relative;
-  padding: 58px 24px 0px 24px;
+  padding: 148px 24px 0px 24px;
   min-height: 100vh;
   font-family: 'Kumbh Sans', sans-serif;
   background: #6565e7;
@@ -19,13 +19,40 @@ body {
   padding: 132px 24px 48px;
   background: #ffffff;
   border-radius: 23px;
+  max-width: 920px;
+  margin: 0 auto;
+  position: relative;
 }
 
-.card .title {
+.card .card-title {
   font-size: 32px;
   font-weight: 700;
   text-align: center;
   margin-bottom: 38px;
+}
+
+.img-woman {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: -90px;
+  right: 0px;
+  left: 0px;
+  margin: 0 auto;
+  z-index: 99;
+}
+
+.img-woman-bg {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 25px;
+  margin: 0 auto;
+  z-index: 9;
 }
 
 .accordion {
@@ -50,12 +77,15 @@ body {
   font-weight: 400;
 }
 
-.accordion .accordion-title:hover {
+.accordion .accordion-header:hover {
   cursor: pointer;
   color: #f47c57;
 }
 
 .accordion .accordion-content {
+  color: #787887;
+  margin-top: 12px;
+  line-height: 18px;
   font-size: 12px;
   font-weight: 400;
   display: none;
@@ -64,6 +94,21 @@ body {
 .accordion .accordion-icon {
   height: 4px;
   width: 8px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.accordion .accordion-title.active {
+  font-weight: 700;
+}
+
+.accordion .accordion-content.active {
+  display: block;
+}
+
+.accordion .accordion-icon.active {
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
 }
 
 footer {
@@ -87,5 +132,18 @@ footer a {
 
 footer p {
   line-height: 1.5;
+}
+
+@media all and (min-width: 1440px) {
+  .card {
+    padding: 65px 95px;
+  }
+  .card .card-content {
+    max-width: 50%;
+    margin-left: auto;
+  }
+  .card .card-title {
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

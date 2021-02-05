@@ -16,7 +16,7 @@ $light-gray-blue: #e7e7e9;
 
 body {
   position: relative;
-  padding: 58px 24px 0px 24px;
+  padding: 148px 24px 0px 24px;
   min-height: 100vh;
   font-family: 'Kumbh Sans', sans-serif;
   background: rgb(101, 101, 231);
@@ -32,13 +32,36 @@ body {
   padding: 132px 24px 48px;
   background: #ffffff;
   border-radius: 23px;
+  max-width: 920px;
+  margin: 0 auto;
+  position: relative;
 
-  .title {
+  .card-title {
     font-size: 32px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 38px;
   }
+}
+
+// Card image
+.img-woman {
+  width: fit-content;
+  position: absolute;
+  top: -90px;
+  right: 0px;
+  left: 0px;
+  margin: 0 auto;
+  z-index: 99;
+}
+.img-woman-bg {
+  width: fit-content;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 25px;
+  margin: 0 auto;
+  z-index: 9;
 }
 
 // Accordions
@@ -55,11 +78,14 @@ body {
     font-size: 13px;
     font-weight: 400;
   }
-  .accordion-title:hover {
+  .accordion-header:hover {
     cursor: pointer;
     color: $soft-red;
   }
   .accordion-content {
+    color: #787887;
+    margin-top: 12px;
+    line-height: 18px;
     font-size: 12px;
     font-weight: 400;
     display: none;
@@ -67,6 +93,21 @@ body {
   .accordion-icon {
     height: 4px;
     width: 8px;
+    transition: 200ms;
+  }
+
+  // Active States (when accordion is opened)
+  // Bold Title
+  .accordion-title.active {
+    font-weight: 700;
+  }
+  // Shows text
+  .accordion-content.active {
+    display: block;
+  }
+  // Flips triangle upside down
+  .accordion-icon.active {
+    transform: scaleY(-1);
   }
 }
 
@@ -94,4 +135,14 @@ footer {
 
 // Desktop View
 @media all and (min-width: 1440px) {
+  .card {
+    padding: 65px 95px;
+    .card-content {
+      max-width: 50%;
+      margin-left: auto;
+    }
+    .card-title {
+      text-align: left;
+    }
+  }
 }

@@ -45,23 +45,32 @@ body {
 }
 
 // Card image
-.img-woman {
-  width: fit-content;
-  position: absolute;
-  top: -90px;
-  right: 0px;
-  left: 0px;
-  margin: 0 auto;
-  z-index: 99;
-}
-.img-woman-bg {
-  width: fit-content;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  left: 25px;
-  margin: 0 auto;
-  z-index: 9;
+.card-img-container {
+  // Mobile Images
+  .mobile-woman {
+    width: fit-content;
+    position: absolute;
+    top: -90px;
+    right: 0px;
+    left: 0px;
+    margin: 0 auto;
+    z-index: 99;
+  }
+  .mobile-bg {
+    width: fit-content;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 25px;
+    margin: 0 auto;
+    z-index: 9;
+  }
+  // Desktop Images
+  .desktop-woman,
+  .desktop-bg,
+  .desktop-box {
+    display: none;
+  }
 }
 
 // Accordions
@@ -137,6 +146,35 @@ footer {
 @media all and (min-width: 1440px) {
   .card {
     padding: 65px 95px;
+
+    .card-img-container {
+      // Mobile Images
+      .mobile-woman,
+      .mobile-bg {
+        display: none;
+      }
+      // Desktop Images
+      .desktop-woman {
+        display: unset;
+        position: absolute;
+        left: -80px;
+        top: 40px;
+        overflow-x: hidden;
+      }
+      .desktop-box {
+        display: unset;
+        position: absolute;
+        left: -100px;
+        top: 170px;
+      }
+      .desktop-bg {
+        display: unset;
+        position: absolute;
+        top: -320px;
+        left: -575px;
+      }
+    }
+
     .card-content {
       max-width: 50%;
       margin-left: auto;

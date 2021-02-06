@@ -31,7 +31,7 @@ body {
   margin-bottom: 38px;
 }
 
-.img-woman {
+.card-img-container .mobile-woman {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -43,7 +43,7 @@ body {
   z-index: 99;
 }
 
-.img-woman-bg {
+.card-img-container .mobile-bg {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -53,6 +53,12 @@ body {
   left: 25px;
   margin: 0 auto;
   z-index: 9;
+}
+
+.card-img-container .desktop-woman,
+.card-img-container .desktop-bg,
+.card-img-container .desktop-box {
+  display: none;
 }
 
 .accordion {
@@ -137,6 +143,29 @@ footer p {
 @media all and (min-width: 1440px) {
   .card {
     padding: 65px 95px;
+  }
+  .card .card-img-container .mobile-woman,
+  .card .card-img-container .mobile-bg {
+    display: none;
+  }
+  .card .card-img-container .desktop-woman {
+    display: unset;
+    position: absolute;
+    left: -80px;
+    top: 40px;
+    overflow-x: hidden;
+  }
+  .card .card-img-container .desktop-box {
+    display: unset;
+    position: absolute;
+    left: -100px;
+    top: 170px;
+  }
+  .card .card-img-container .desktop-bg {
+    display: unset;
+    position: absolute;
+    top: -320px;
+    left: -575px;
   }
   .card .card-content {
     max-width: 50%;

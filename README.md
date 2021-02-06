@@ -5,6 +5,8 @@ The following is my genuine and personalized solution to the Frontend Mentor cha
 - Responsive accordion card component implemented with vanilla HTML, CSS, and JS.
 - Developed from design assets provided by Frontend Mentor
 
+![project showcase](showcase.gif)
+
 ## Motivation
 
 - To practice creating the front-end of a professional-quality design without the use of a tutorial, answer-key, or previous solution.

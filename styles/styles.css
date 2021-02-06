@@ -36,9 +36,9 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   position: absolute;
-  top: -90px;
-  right: 0px;
-  left: 0px;
+  top: -105px;
+  left: -20px;
+  right: 0;
   margin: 0 auto;
   z-index: 99;
 }
@@ -48,9 +48,9 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   position: absolute;
-  top: 0px;
-  right: 0px;
-  left: 25px;
+  top: 5px;
+  left: 10px;
+  right: 0;
   margin: 0 auto;
   z-index: 9;
 }
@@ -148,20 +148,20 @@ footer p {
   .card .card-img-container .mobile-bg {
     display: none;
   }
-  .card .card-img-container .desktop-woman {
+  .card .card-img-container .desktop-img .desktop-woman {
     display: unset;
     position: absolute;
     left: -80px;
     top: 40px;
     overflow-x: hidden;
   }
-  .card .card-img-container .desktop-box {
+  .card .card-img-container .desktop-img .desktop-box {
     display: unset;
     position: absolute;
     left: -100px;
     top: 170px;
   }
-  .card .card-img-container .desktop-bg {
+  .card .card-img-container .desktop-img .desktop-bg {
     display: unset;
     position: absolute;
     top: -320px;
